@@ -14,6 +14,7 @@ public partial class Mob : RigidBody2D
 	// We also specified this function name in PascalCase in the editor's connection window.
 	private void OnVisibleOnScreenNotifier2DScreenExited()
 	{
+		// Console.WriteLine("QuitScreen");
 		QueueFree();
 	}
 
@@ -21,4 +22,6 @@ public partial class Mob : RigidBody2D
 	public override void _Process(double delta)
 	{
 	}
+
+	
 }
